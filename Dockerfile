@@ -1,5 +1,8 @@
 FROM golang:1.12
 
-RUN mkdir /hello
-COPY main.go /hello
-CMD ["go", "run", "/hello/main.go"]
+WORKDIR $HOME/go-example-http-helloworld
+
+COPY . .
+RUN go mod tidy
+CMD ["go", "run", "main.go"]
+
