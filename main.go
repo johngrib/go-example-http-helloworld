@@ -1,4 +1,4 @@
-package main // import "github.com/johngrib/go-example-http-helloworld"
+package main
 
 import (
 	"fmt"
